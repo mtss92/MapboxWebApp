@@ -4,7 +4,8 @@
   "description": "this is a map viewer for test",
   "main": "index.js",
   "scripts": {
-    "test": "echo test"
+    "test": "echo test",
+    "webpack": "webpack -d --watch"
   },
   "repository": {
     "type": "git",
@@ -13,7 +14,6 @@
   "keywords": [
     "mapbox",
     "map",
-    "openlayers",
     "web"
   ],
   "author": "Mohammad Tajik",
@@ -21,5 +21,15 @@
   "bugs": {
     "url": "https://github.com/mtss92/MapboxWebApp/issues"
   },
-  "homepage": "https://github.com/mtss92/MapboxWebApp#readme"
+  "homepage": "https://github.com/mtss92/MapboxWebApp#readme",
+  "devDependencies": {
+    "mapbox-gl": "^1.0.0",
+    "ts-loader": "^6.0.2",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  },
+  "dependencies": {
+    "@types/node": "^12.0.4"
+  }
 }
