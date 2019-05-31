@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo test",
-    "webpack": "webpack -d --watch"
+    "build": "webpack -p",
+    "start": "webpack-dev-server --port 10123"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "mapbox-gl": "^1.0.0",
     "ts-loader": "^6.0.2",
+    "typescript": "^3.5.1",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.4.1"

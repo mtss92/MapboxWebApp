@@ -1,13 +1,13 @@
 module.exports = {
-    entry:'./index.ts'
+    entry:'./src/index.ts'
     ,output:{
-        filename:'../bundle.js'
+        filename:'bundle.js'
     }
-    ,watch :true
+    ,watch :false
     ,module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.ts$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'ts-loader'
@@ -15,5 +15,8 @@ module.exports = {
             }
         ]
       }
-
+      ,devServer: {
+        open: true
+      }
+      ,mode: 'development'
 }

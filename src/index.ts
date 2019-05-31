@@ -1,5 +1,4 @@
-
-var mapboxgl = require("./node_modules/mapbox-gl/dist/mapbox-gl.js");
+var mapboxgl = require("../node_modules/mapbox-gl/dist/mapbox-gl.js");
 
 mapboxgl.accessToken =
     'pk.eyJ1IjoibXRzczkyIiwiYSI6ImNqdzY4d25sZDBocWk0OG85aml2dnUxYW4ifQ.QdR673Ofvcpe5wxCSuO_Tg';
